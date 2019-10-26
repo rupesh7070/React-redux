@@ -1,8 +1,15 @@
 import React from "react";
 import { render } from "react-dom";
+import {BrowserRouter as Router} from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
 
-function Hi() {
-  return <p>Hi from Rupesh</p>;
-}
+import ReactStrapPlayGround from "./components/ReactStrapPlayGround"
+import "./index.css";
 
-render(<Hi />, document.getElementById("app"));
+
+render(
+<Router>
+    <ReactStrapPlayGround/>
+</Router>,
+ document.getElementById("app")
+ );
